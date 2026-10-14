@@ -1,32 +1,48 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/block360-site/style.css"><title>Privacy Policy</title></head><body><main>
-<header><a href="/block360-site/">Block360</a></header><nav><a href="/block360-site/privacy/">Privacy</a><a href="/block360-site/terms/">Terms</a><a href="/block360-site/support/">Support</a></nav>
+<header><a href="/block360-site/">Brakely</a></header><nav><a href="/block360-site/privacy/">Privacy</a><a href="/block360-site/terms/">Terms</a><a href="/block360-site/support/">Support</a></nav>
 <h1>Privacy Policy</h1>
-<p class="muted">Block360 - Apps &amp; Websites for iPhone and iPad. Effective 11 October 2026.</p>
-<p>Block360 is built to work with as little personal data as possible. We do not sell data and we do not show ads. Most of what the app knows stays on your device.</p>
+<p class="muted">Brakely: Screen Time &amp; Blocker for iPhone and iPad, published by Good Games Inc. Effective 14 October 2026.</p>
+<p>Brakely is built to work with as little personal data as possible. We do not sell data, we do not show ads and we do not track you across other apps or websites. Most of what the app knows stays on your device. The optional features below send a small amount of data to our server, and only when you use them.</p>
 
 <h2>Screen Time data</h2>
-<p>Block360 uses Apple's Screen Time framework (Family Controls, Managed Settings and Device Activity). When you choose apps, categories or websites, Apple gives the app only opaque tokens, not app names. Your choices, schedules, limits, intention and counts of pauses are stored on your device in the app's private storage. The Screen Time report inside the app is drawn by Apple in a private extension; those numbers cannot leave the device, not even to us.</p>
+<p>Brakely uses Apple's Screen Time framework (Family Controls, Managed Settings and Device Activity). When you choose apps, categories or websites, Apple gives the app only opaque tokens, not app names. Your choices, schedules, limits, intention, tasks and counts of pauses are stored on your device in the app's private storage. The Screen Time report inside the app is drawn by Apple in a private extension; those numbers cannot leave the device, not even to us.</p>
 
 <h2>Child mode</h2>
-<p>A parent can set Block360 up on a child's device. Apple asks the parent to approve with their Apple Account through Family Sharing. The child's first name (optional) and the parent PIN stay on that device; the PIN is stored only as a salted hash. We do not collect personal information from children, have no accounts, and do not send a child's data anywhere.</p>
+<p>A parent can set Brakely up on a child's device. Apple asks the parent to approve with their Apple Account through Family Sharing. The child's first name (optional) and the parent PIN stay on that device; the PIN is stored only as a salted hash. Children's devices cannot join streak groups. We do not show ads to anyone and never use children's data for advertising or analytics profiles.</p>
+
+<h2>Family link (optional)</h2>
+<p>If a parent links their phone to a child's device, both devices register with our server (hosted by Railway). Neither device has an account, email or password: each gets a random identifier and a secret token, and we store only a hash of the token. The server keeps:</p>
+<ul>
+<li>the device name you see (for example "Mum's iPhone") and the child's first name;</li>
+<li>an Apple push token and time zone, to send notifications such as "Sara asks for more time" and the Sunday weekly summary;</li>
+<li>the child device's summary for its parents: today's and this week's counts (time saved, opens avoided, focus minutes, tasks done, earned minutes), streak, stars and badges, the daily limit, schedule names and times, task titles, whether Screen Time access is on, battery level and when the device was last seen;</li>
+<li>the requests and changes parents send (for example "lock for 30 minutes" or "approve task").</li>
+</ul>
+<p>Apple never tells us which apps or websites are used, so the server never has them. Only parents linked to a child can see that child's summary. Unlinking, "Remove this child" or "Use this iPhone for myself" deletes the link; removing a device deletes its data from the server.</p>
+
+<h2>Streaks with friends (optional, adults only)</h2>
+<p>If you create or join a group, the server keeps the group name, the nickname you choose and your day streak number, visible to the members of that group. Leave a group to remove yourself from it.</p>
+
+<h2>Weekly AI reflection (optional, Pro)</h2>
+<p>Before the first use, the app asks you. When you ask for a reflection, Brakely sends this week's counts (opens, time saved, focus minutes, streak), your goals and your language to our server, which asks DeepSeek, an AI service, to write a short text (<a href="https://www.deepseek.com/">deepseek.com</a>). App names, websites, your intention and any names are never sent. To check that you have Pro and to count your credits, the app also sends Apple's signed record of your subscription; we keep its original transaction number, the credits used per period and the reflection text, so opening it again is free.</p>
 
 <h2>Location (prayer times, optional)</h2>
-<p>If you turn on prayer-time mode and choose "Use my location once", the app asks for your location one time to work out prayer times. It keeps a rounded position (about 1 km) and the city name on the device and never sends it to us or anyone else. You can pick a city from a list instead.</p>
+<p>If you turn on prayer-time or Ramadan mode and choose "Use my location once", the app asks for your location one time to work out prayer times. It keeps a rounded position (about 1 km) and the city name on the device and never sends it to us or anyone else. You can pick a city from a list instead.</p>
 
-<h2>Information we and others receive</h2>
+<h2>Information others receive</h2>
 <table>
 <tr><th>Service</th><th>What and why</th></tr>
 <tr><td>Apple App Store and StoreKit</td><td>Subscriptions, free trials, Family Sharing and restores are handled by Apple. We receive no payment details. <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
-<tr><td>Apple App Store lookup</td><td>During setup the app downloads the public App Store icons of a few well-known apps (for example YouTube or TikTok) from itunes.apple.com to illustrate what can be blocked. Only those apps' public store ids are requested; nothing about you is sent.</td></tr>
+<tr><td>Apple Push Notification service</td><td>Delivers the family notifications above to the device's push token.</td></tr>
+<tr><td>Apple App Store lookup</td><td>During setup the app downloads the public App Store icons of a few well-known apps (for example YouTube or TikTok) from itunes.apple.com to illustrate what can be blocked. Nothing about you is sent.</td></tr>
+<tr><td>Railway</td><td>Hosts our family-link server and its database.</td></tr>
+<tr><td>DeepSeek</td><td>Writes the optional AI weekly reflection from the counts described above.</td></tr>
 <tr><td>Google Analytics for Firebase</td><td>Anonymous app events, such as "setup finished", "paywall shown" or "purchase", and standard app information (app version, device model, country). Never the apps or websites you choose, your Screen Time data, location, intention, child's name or PIN. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 </table>
 
-<h2>Notifications</h2>
-<p>Notifications are created on your device (for example "Take your breath" or "Focus session done"). They are not sent through our servers.</p>
-
 <h2>Your choices</h2>
-<p>You can remove Screen Time access in iOS Settings &gt; Screen Time, turn off notifications or location in iOS Settings, and delete everything the app stored by deleting the app (on a child's device, a parent's approval is needed).</p>
+<p>You can remove Screen Time access in iOS Settings &gt; Screen Time, turn off notifications or location in iOS Settings, unlink devices and leave groups in the app, and delete everything stored on the device by deleting the app (on a child's device, a parent's approval is needed). To have server data deleted, use the options above or write to us.</p>
 
 <h2>Contact</h2>
-<p>Questions: <a href="mailto:coolwithtech@gmail.com">coolwithtech@gmail.com</a>. If this policy changes, the new version will appear on this page with a new date.</p>
+<p>Questions or deletion requests: <a href="mailto:coolwithtech@gmail.com">coolwithtech@gmail.com</a>. If this policy changes, the new version will appear on this page with a new date.</p>
 </main></body></html>
